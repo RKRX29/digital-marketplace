@@ -1,0 +1,154 @@
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-card h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.login-subtitle {
+  text-align: center;
+  margin-bottom: 32px;
+  color: var(--light-text);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.form-group label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  padding: 14px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.15);
+}
+
+.forgot-password {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 0.85rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.remember-me {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.remember-me label {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.login-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background-color: var(--primary-hover);
+}
+
+.login-footer {
+  margin-top: 32px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-footer p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.login-footer a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
+
+.back-home {
+  font-size: 0.9rem;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e63946;
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: none;
+}
+
+.error .error-message {
+  display: block;
+}
+
+.error input {
+  border-color: #e63946;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .login-card {
+    padding: 30px 20px;
+  }
+}
